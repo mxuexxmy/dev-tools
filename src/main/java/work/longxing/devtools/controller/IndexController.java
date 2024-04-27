@@ -1,6 +1,7 @@
 package work.longxing.devtools.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -13,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-
+    @GetMapping("/layui")
+    public String layui() {
+        return "layui-test.html";
+    }
 
 }

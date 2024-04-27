@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Start - Layui</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+</head>
+<body>
+<!-- HTML Content -->
+<script th:src="@{/layui/layui.js}"></script>
+<script>
+    // Usage
+    layui.use(function(){
+        var layer = layui.layer;
+        // Welcome
+        layer.msg('Hello World', {icon: 6});
+    });
+</script>
+</body>
+</html>

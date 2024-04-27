@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>id 生成器</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+</head>
+<body>
+
+<div class="layui-form">
+    <hr class="ws-space-16">
+        <textarea  th:text="${textareaValue}" class="layui-textarea"></textarea>
+</div>
+
+<!-- HTML Content -->
+<script th:src="@{/layui/layui.js}"></script>
+</body>
+</html>
